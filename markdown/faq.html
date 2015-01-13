@@ -57,7 +57,14 @@ A: Apple and Oracle do not support Java 1.7 out of the box, you need to install 
 
 3.Q: I have this error JAVA_HOME is not set properly, how to fix that ?
 
-A: You need to set JAVA_HOME properly, for example: ```sh export JAVA_HOME=`/usr/libexec/java_home` ```
+A: You need to set JAVA_HOME properly, for example: 
+```sh 
+export JAVA_HOME=`/usr/libexec/java_home` 
+```
+or on Mac: 
+```sh 
+export JAVA_HOME=$(/usr/libexec/java_home)
+```
 
 4.Q: I saw this error message "You must build DDF's Java core and spark package firstly" 
 
